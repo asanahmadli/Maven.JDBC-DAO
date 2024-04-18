@@ -1,4 +1,4 @@
-public class Cars {
+public class Car {
 /**The aim of this tutorial is to manage the access of a table in database
  * from separate layer written in java, this layer usually called Data Access Layer (DAL)
  *
@@ -20,11 +20,11 @@ private String year;
 private String color;
 private String vin;
 
-public Cars(){
+public Car(){
 
 }
 
-    public Cars(Integer id, String make, String model, String year, String color, String vin) {
+    public Car(Integer id, String make, String model, String year, String color, String vin) {
         this.id = id;
         this.make = make;
         this.model = model;
@@ -33,7 +33,7 @@ public Cars(){
         this.vin = vin;
     }
 
-    public Cars(String make, String model, String year, String color, String vin) {
+    public Car(String make, String model, String year, String color, String vin) {
         this.make = make;
         this.model = model;
         this.year = year;

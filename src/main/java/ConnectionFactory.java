@@ -1,12 +1,14 @@
 import com.mysql.cj.jdbc.Driver;
 
 import java.sql.*;
+import java.util.logging.Logger;
 
 public class ConnectionFactory {
-    public static final String URL = "jdbc:mysql://localhost:3306/university";
+    public static final String URL = "jdbc:mysql://localhost:3306/bmw";
     public static final String USER = "asan";
     public static final String PASS = "pass";
-    public static String query = "select * from EngineeringStudents where Last_Name = 'Pujar';";
+    public static String query = "select * from cars;";
+    static Logger demoLog =  Logger.getLogger("demoJDBC");
     public static Connection getConnection(){
         try {
             DriverManager.registerDriver(new Driver());
