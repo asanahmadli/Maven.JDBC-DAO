@@ -1,0 +1,51 @@
+JDBC is a tool or an application programming interface that establishes a connection between a standard Database and Java application that intends to use that database.
+Need for JDBC
+1.establishing database connectivity
+2.to execute mysql queries and DDL/DML commands.
+3.view and modify data records.
+
+SQL               JAVA
+varchar           String
+bit                boolean
+numeric             bigdecimal
+integer             int
+real                float
+float               float
+double              double
+binary              byte[]
+date                Date
+timestamp           timestamp
+array               array
+ref                 ref
+struct              struct
+char                string
+biginit             long
+varbinary           byte[]
+clob                clob
+blob                blob
+
+JDBC Architecture
+Application-->JDBC API-->JDBC Manager-->JDBC Drivers---> can be SQL server or Oracle DB or Source
+
+Steps:
+1.Import Packages
+2.Load and Register Driver (this steps need to connect you app to database)
+3.Connecting Database  (this is done by getConnection();
+4.Writing a Query
+5.Executing Query  (done by executeQuery())
+6.Processing Result--after step five the system basically does two things.
+1.Process Output
+2.Retrieve values
+7.closing statement
+8.closing connection
+
+
+create table EngineeringStudents (
+    -> Student_ID INT NOT NULL,
+    -> Department VARCHAR(255),
+    -> First_Name VARCHAR(255),
+    -> Last_Name VARCHAR(255),
+    -> PassOutYear INT NOT NULL,
+    -> UniversityRank INT NOT NULL,
+    -> PRIMARY KEY ( Student_ID));
+ INSERT INTO EngineeringStudents VALUES (10201, 'CSE', 'Kiran', 'Acharya', 2018,1272);
