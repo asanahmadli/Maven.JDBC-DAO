@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends DAOConcreate{
 /**The aim of this tutorial is to manage the access of a table in database
  * from separate layer written in java, this layer usually called Data Access Layer (DAL)
  *
